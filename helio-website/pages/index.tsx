@@ -1,6 +1,6 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import type { NextPage } from 'next';
+import Head from 'next/head';
+import styles from '../styles/Home.module.css';
 import React from 'react';
 import { Link } from 'react-scroll';
 
@@ -77,25 +77,25 @@ const Home: NextPage = () => {
         <div className={styles.cards_container}>
 
           <div className={styles.left_column}>
-            <a href="https://nextjs.org/docs" className={styles.card}>
+            <a href="/contact" className={styles.card}>
               <h2>Challenge us! &rarr;</h2>
               <p>A solution you need? An idea you want to test? Just let us know!</p>
             </a>
-            <a href="https://nextjs.org/learn" className={styles.card}>
+            {/* <a href="https://nextjs.org/learn" className={styles.card}>
               <h2>Our achievements &rarr;</h2>
               <p>Not sure about us? Let our results and experience talk for us.</p>
-            </a>
+            </a> */}
           </div>
           <div className={styles.right_column}>
             <a
-              href="https://github.com/vercel/next.js/tree/master/examples"
+              href="/about_us"
               className={styles.card}
             >
               <h2>What do we do? &rarr;</h2>
               <p>We get things done well, or we die trying. We never died, so it has been a success until now.</p>
             </a>
             <a
-              href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+              href="/pricing"
               className={styles.card}
             >
               <h2>Prices &rarr;</h2>
