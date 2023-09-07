@@ -1,0 +1,24 @@
+{
+  "name": "helio-website",
+  "version": "1.0.0",
+  "description": "Helio's web page.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node built/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helio7/helio-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/helio7/helio-website/issues"
+  },
+  "homepage": "https://github.com/helio7/helio-website#readme",
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}
