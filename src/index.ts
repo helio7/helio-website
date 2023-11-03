@@ -8,7 +8,10 @@ server.on('request', (req, res) => {
   if (req.url === '/') {
     fs.readFile('src/assets/index.html', (err, data) => {
       res.setHeader('Content-Type', 'text/html');
-      res.end(data.toString());
+      res.end(
+        data.toString()
+          .replace(/{{SERVER_BASE_URL}}/g, 'http://localhost:3002'),
+      );
     });
   } else if (req.url === '/css') {
     fs.readFile('src/assets/styles.css', (err, data) => {
