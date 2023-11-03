@@ -1,5 +1,8 @@
 import http from 'http';
 import fs from 'fs';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const server = http.createServer();
 
@@ -10,7 +13,7 @@ server.on('request', (req, res) => {
       res.setHeader('Content-Type', 'text/html');
       res.end(
         data.toString()
-          .replace(/{{SERVER_BASE_URL}}/g, 'http://localhost:3002'),
+          .replace(/{{SERVER_BASE_URL}}/g, process.env.SERVER_BASE_URL!),
       );
     });
   } else if (req.url === '/css') {
